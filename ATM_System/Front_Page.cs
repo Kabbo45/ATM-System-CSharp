@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATM_System.Main_Page;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,6 +63,12 @@ namespace ATM_System
             ccc3.Parent = pictureBox2;
             ccc3.Location = pos8;
             ccc3.BackColor = Color.Transparent;
+
+            var pos9 = this.PointToScreen(button2.Location);
+            pos9 = pictureBox2.PointToClient(pos9);
+            button2.Parent = pictureBox2;
+            button2.Location = pos9;
+            button2.BackColor = Color.Transparent;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -93,6 +100,8 @@ namespace ATM_System
             this.Hide();
             Login login = new Login();
             login.Show();
+
+            
         }
 
         private void Front_Page_Load(object sender, EventArgs e)
@@ -124,6 +133,14 @@ namespace ATM_System
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            contact.connector = 1;
+            this.Hide();
+            contact jj = new contact();
+            jj.Show();
         }
     }
 }

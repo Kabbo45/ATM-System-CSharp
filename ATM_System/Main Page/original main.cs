@@ -31,11 +31,13 @@ namespace ATM_System
         public original_main()
         {
             InitializeComponent();
+            panel6.Hide();
             panelWidth = slide1.Width;
             panelWidth2 = slide2.Width;
             Hidden = false;
             Hidden2 = false;
             panel4.Hide();
+            panel7.Hide();
             dp();
             dot();
             if (qwe == 1)
@@ -90,9 +92,9 @@ namespace ATM_System
             string x1 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + x + ".jpg";
             string x2 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + x + ".jpeg";
             string x3 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + x + ".png";
-            string x4 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + x + ".jpg";
-            string x5 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + x + ".jpeg";
-            string x6 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + x + ".png";
+            string x4 = @"D:\Varsity\Projects\ATM System C#\User Image (Card)\" + x + ".jpg";
+            string x5 = @"D:\Varsity\Projects\ATM System C#\User Image (Card)\" + x + ".jpeg";
+            string x6 = @"D:\Varsity\Projects\ATM System C#\User Image (Card)\" + x + ".png";
             FileInfo fileInfo1 = new FileInfo(x1);
             FileInfo fileInfo2 = new FileInfo(x2);
             FileInfo fileInfo3 = new FileInfo(x3);
@@ -217,7 +219,6 @@ namespace ATM_System
             this.Close();
             new end().Show();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             con.Open();
@@ -279,14 +280,7 @@ namespace ATM_System
 
         private void b10_Click(object sender, EventArgs e)
         {
-            if (panel4.Visible)
-            {
-                panel4.Hide();
-            }
-            else
-            {
-                panel4.Show();
-            }
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -312,10 +306,7 @@ namespace ATM_System
 
         private void b7_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            add_money frm2 = new add_money() { TopLevel = false, TopMost = true };
-            this.panel2.Controls.Add(frm2);
-            frm2.Show();
+            
         }
 
         private void slide1_Paint(object sender, PaintEventArgs e)
@@ -325,10 +316,7 @@ namespace ATM_System
 
         private void b10_1_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            update_pin frm3 = new update_pin() { TopLevel = false, TopMost = true };
-            this.panel2.Controls.Add(frm3);
-            frm3.Show();
+            
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -338,10 +326,7 @@ namespace ATM_System
 
         private void b10_2_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            updater frm3 = new updater() { TopLevel = false, TopMost = true };
-            this.panel2.Controls.Add(frm3);
-            frm3.Show();
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -367,10 +352,14 @@ namespace ATM_System
 
         private void b6_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            crypto_buy frm3 = new crypto_buy() { TopLevel = false, TopMost = true };
-            this.panel2.Controls.Add(frm3);
-            frm3.Show();
+            if (panel4.Visible)
+            {
+                panel4.Hide();
+            }
+            else
+            {
+                panel4.Show();
+            }
         }
 
         private void b8_Click(object sender, EventArgs e)
@@ -380,16 +369,113 @@ namespace ATM_System
 
         private void b9_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            donation frm3 = new donation() { TopLevel = false, TopMost = true };
-            this.panel2.Controls.Add(frm3);
-            frm3.Show();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
             new locker().Show();
+        }
+
+        private void slide2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if(panel6.Visible)
+            {
+                panel6.Hide();
+            }
+            else
+            {
+                panel2.Controls.Clear();
+                this.panel2.Controls.Add(panel6);
+                panel6.Show();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            contact.user = x;
+            contact.name = y;
+            contact.connector = 2;
+            panel2.Controls.Clear();
+            contact frm3 = new contact() { TopLevel = false, TopMost = true };
+            this.panel2.Controls.Add(frm3);
+            frm3.Show();
+        }
+
+        private void b10_Click_1(object sender, EventArgs e)
+        {
+            if (panel7.Visible)
+            {
+                panel7.Hide();
+            }
+            else
+            {
+                panel7.Show();
+            }
+        }
+
+        private void b10_1_Click_1(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            update_pin frm3 = new update_pin() { TopLevel = false, TopMost = true };
+            this.panel2.Controls.Add(frm3);
+            frm3.Show();
+        }
+
+        private void b10_2_Click_1(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            updater frm3 = new updater() { TopLevel = false, TopMost = true };
+            this.panel2.Controls.Add(frm3);
+            frm3.Show();
+        }
+
+        private void b9_Click_1(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            donation frm3 = new donation() { TopLevel = false, TopMost = true };
+            this.panel2.Controls.Add(frm3);
+            frm3.Show();
+        }
+
+        private void b7_Click_1(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            add_money frm2 = new add_money() { TopLevel = false, TopMost = true };
+            this.panel2.Controls.Add(frm2);
+            frm2.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            create_crypto_wallet frm3 = new create_crypto_wallet() { TopLevel = false, TopMost = true };
+            this.panel2.Controls.Add(frm3);
+            frm3.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            crypto_send frm3 = new crypto_send() { TopLevel = false, TopMost = true };
+            this.panel2.Controls.Add(frm3);
+            frm3.Show();
         }
     }
 }

@@ -69,22 +69,31 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label17 = new System.Windows.Forms.Label();
+            this.email_box = new System.Windows.Forms.TextBox();
+            this.pp1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.l1 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pp1.SuspendLayout();
             this.SuspendLayout();
             // 
             // back
             // 
             this.back.BackColor = System.Drawing.Color.Transparent;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back.Font = new System.Drawing.Font("Monument Extended Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.back.Location = new System.Drawing.Point(74, 25);
-            this.back.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.back.Location = new System.Drawing.Point(58, 13);
+            this.back.Margin = new System.Windows.Forms.Padding(4);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(132, 35);
+            this.back.Size = new System.Drawing.Size(90, 40);
             this.back.TabIndex = 6;
-            this.back.Text = "BACK";
+            this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
@@ -93,49 +102,54 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monument Extended Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(689, 25);
+            this.label1.Location = new System.Drawing.Point(612, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(482, 53);
+            this.label1.Size = new System.Drawing.Size(451, 49);
             this.label1.TabIndex = 5;
             this.label1.Text = "REGISTRATION";
             // 
             // nametxt
             // 
-            this.nametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nametxt.Location = new System.Drawing.Point(406, 108);
+            this.nametxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nametxt.Location = new System.Drawing.Point(361, 86);
+            this.nametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nametxt.Name = "nametxt";
-            this.nametxt.Size = new System.Drawing.Size(424, 30);
+            this.nametxt.Size = new System.Drawing.Size(377, 29);
             this.nametxt.TabIndex = 0;
+            this.nametxt.TextChanged += new System.EventHandler(this.nametxt_TextChanged);
             // 
             // parmanenttxt
             // 
-            this.parmanenttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parmanenttxt.Location = new System.Drawing.Point(406, 204);
+            this.parmanenttxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.parmanenttxt.Location = new System.Drawing.Point(361, 166);
+            this.parmanenttxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.parmanenttxt.Multiline = true;
             this.parmanenttxt.Name = "parmanenttxt";
-            this.parmanenttxt.Size = new System.Drawing.Size(424, 42);
+            this.parmanenttxt.Size = new System.Drawing.Size(377, 34);
             this.parmanenttxt.TabIndex = 2;
             this.parmanenttxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // phonetxt
             // 
-            this.phonetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phonetxt.Location = new System.Drawing.Point(406, 155);
+            this.phonetxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phonetxt.Location = new System.Drawing.Point(361, 126);
+            this.phonetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.phonetxt.Name = "phonetxt";
-            this.phonetxt.Size = new System.Drawing.Size(424, 30);
+            this.phonetxt.Size = new System.Drawing.Size(377, 29);
             this.phonetxt.TabIndex = 1;
             this.phonetxt.Text = "+880";
+            this.phonetxt.TextChanged += new System.EventHandler(this.phonetxt_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(230, 109);
+            this.label2.Location = new System.Drawing.Point(237, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 24);
+            this.label2.Size = new System.Drawing.Size(118, 26);
             this.label2.TabIndex = 10;
             this.label2.Text = "Full Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -144,11 +158,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(148, 155);
+            this.label3.Location = new System.Drawing.Point(184, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 24);
+            this.label3.Size = new System.Drawing.Size(171, 26);
             this.label3.TabIndex = 11;
             this.label3.Text = "Phone Number";
             // 
@@ -156,35 +170,36 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(70, 204);
+            this.label4.Location = new System.Drawing.Point(129, 167);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(316, 24);
+            this.label4.Size = new System.Drawing.Size(226, 26);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Parmanent Address";
+            this.label4.Text = "Permanent Address";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(117, 267);
+            this.label5.Location = new System.Drawing.Point(162, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(268, 24);
+            this.label5.Size = new System.Drawing.Size(193, 26);
             this.label5.TabIndex = 13;
             this.label5.Text = "Present Address";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // presenttxt
             // 
-            this.presenttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.presenttxt.Location = new System.Drawing.Point(405, 266);
+            this.presenttxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.presenttxt.Location = new System.Drawing.Point(360, 211);
+            this.presenttxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.presenttxt.Multiline = true;
             this.presenttxt.Name = "presenttxt";
-            this.presenttxt.Size = new System.Drawing.Size(424, 42);
+            this.presenttxt.Size = new System.Drawing.Size(377, 34);
             this.presenttxt.TabIndex = 3;
             this.presenttxt.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -192,54 +207,61 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(34, 394);
+            this.label6.Location = new System.Drawing.Point(96, 314);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(352, 24);
+            this.label6.Size = new System.Drawing.Size(259, 26);
             this.label6.TabIndex = 15;
             this.label6.Text = "NID or Birth Certificate";
             // 
             // nidtxt
             // 
-            this.nidtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nidtxt.Location = new System.Drawing.Point(405, 393);
+            this.nidtxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nidtxt.Location = new System.Drawing.Point(360, 314);
+            this.nidtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nidtxt.Name = "nidtxt";
-            this.nidtxt.Size = new System.Drawing.Size(424, 30);
+            this.nidtxt.Size = new System.Drawing.Size(377, 29);
             this.nidtxt.TabIndex = 4;
+            this.nidtxt.TextChanged += new System.EventHandler(this.nidtxt_TextChanged);
             // 
             // incometxt
             // 
-            this.incometxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incometxt.Location = new System.Drawing.Point(405, 490);
+            this.incometxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incometxt.Location = new System.Drawing.Point(360, 389);
+            this.incometxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.incometxt.Name = "incometxt";
-            this.incometxt.Size = new System.Drawing.Size(241, 30);
+            this.incometxt.Size = new System.Drawing.Size(215, 29);
             this.incometxt.TabIndex = 6;
+            this.incometxt.TextChanged += new System.EventHandler(this.incometxt_TextChanged);
             // 
             // pintxt
             // 
-            this.pintxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pintxt.Location = new System.Drawing.Point(405, 585);
+            this.pintxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pintxt.Location = new System.Drawing.Point(360, 500);
+            this.pintxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pintxt.Name = "pintxt";
-            this.pintxt.Size = new System.Drawing.Size(424, 30);
+            this.pintxt.PasswordChar = '*';
+            this.pintxt.Size = new System.Drawing.Size(377, 29);
             this.pintxt.TabIndex = 8;
+            this.pintxt.TextChanged += new System.EventHandler(this.pintxt_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(200, 440);
+            this.label7.Location = new System.Drawing.Point(220, 351);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(186, 24);
+            this.label7.Size = new System.Drawing.Size(135, 26);
             this.label7.TabIndex = 21;
             this.label7.Text = "Occupation";
             // 
             // ocu_combo
             // 
             this.ocu_combo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ocu_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ocu_combo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ocu_combo.FormattingEnabled = true;
             this.ocu_combo.Items.AddRange(new object[] {
             "Student",
@@ -249,9 +271,10 @@
             "Housewife",
             "Teacher",
             "Service Holder"});
-            this.ocu_combo.Location = new System.Drawing.Point(406, 440);
+            this.ocu_combo.Location = new System.Drawing.Point(361, 351);
+            this.ocu_combo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ocu_combo.Name = "ocu_combo";
-            this.ocu_combo.Size = new System.Drawing.Size(240, 33);
+            this.ocu_combo.Size = new System.Drawing.Size(214, 30);
             this.ocu_combo.TabIndex = 5;
             this.ocu_combo.SelectedIndexChanged += new System.EventHandler(this.ocu_combo_SelectedIndexChanged);
             // 
@@ -259,11 +282,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(130, 490);
+            this.label8.Location = new System.Drawing.Point(176, 388);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(255, 24);
+            this.label8.Size = new System.Drawing.Size(179, 26);
             this.label8.TabIndex = 24;
             this.label8.Text = "Monthly Income";
             // 
@@ -271,11 +294,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(207, 587);
+            this.label9.Location = new System.Drawing.Point(223, 499);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 24);
+            this.label9.Size = new System.Drawing.Size(132, 26);
             this.label9.TabIndex = 25;
             this.label9.Text = "Choose Pin";
             // 
@@ -283,20 +306,22 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(202, 633);
+            this.label10.Location = new System.Drawing.Point(219, 536);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(183, 24);
+            this.label10.Size = new System.Drawing.Size(136, 26);
             this.label10.TabIndex = 27;
             this.label10.Text = "Confirm Pin";
             // 
             // pintxt2
             // 
-            this.pintxt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pintxt2.Location = new System.Drawing.Point(406, 633);
+            this.pintxt2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pintxt2.Location = new System.Drawing.Point(361, 537);
+            this.pintxt2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pintxt2.Name = "pintxt2";
-            this.pintxt2.Size = new System.Drawing.Size(424, 30);
+            this.pintxt2.PasswordChar = '*';
+            this.pintxt2.Size = new System.Drawing.Size(377, 29);
             this.pintxt2.TabIndex = 9;
             this.pintxt2.TextChanged += new System.EventHandler(this.pintxt2_TextChanged);
             // 
@@ -305,9 +330,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(911, 140);
+            this.pictureBox1.Location = new System.Drawing.Point(810, 112);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 199);
+            this.pictureBox1.Size = new System.Drawing.Size(178, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
@@ -316,13 +342,14 @@
             // browse
             // 
             this.browse.BackColor = System.Drawing.Color.Indigo;
-            this.browse.Font = new System.Drawing.Font("Monument Extended Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.browse.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.browse.Location = new System.Drawing.Point(911, 392);
+            this.browse.Location = new System.Drawing.Point(810, 325);
+            this.browse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.browse.Name = "browse";
-            this.browse.Size = new System.Drawing.Size(152, 41);
+            this.browse.Size = new System.Drawing.Size(135, 42);
             this.browse.TabIndex = 10;
-            this.browse.Text = "BROWSE";
+            this.browse.Text = "Browse";
             this.browse.UseVisualStyleBackColor = false;
             this.browse.Click += new System.EventHandler(this.browse_Click);
             // 
@@ -330,13 +357,13 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Monument Extended Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(907, 113);
+            this.label11.Location = new System.Drawing.Point(828, 85);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(180, 19);
+            this.label11.Size = new System.Drawing.Size(137, 22);
             this.label11.TabIndex = 30;
-            this.label11.Text = "UPLOAD IMAGE";
+            this.label11.Text = "Upload Image";
             // 
             // submit
             // 
@@ -344,9 +371,10 @@
             this.submit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submit.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submit.ForeColor = System.Drawing.Color.White;
-            this.submit.Location = new System.Drawing.Point(501, 688);
+            this.submit.Location = new System.Drawing.Point(445, 586);
+            this.submit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(200, 54);
+            this.submit.Size = new System.Drawing.Size(178, 43);
             this.submit.TabIndex = 11;
             this.submit.Text = "SUBMIT";
             this.submit.UseVisualStyleBackColor = false;
@@ -354,9 +382,11 @@
             // 
             // imagetxt
             // 
-            this.imagetxt.Location = new System.Drawing.Point(911, 354);
+            this.imagetxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imagetxt.Location = new System.Drawing.Point(810, 283);
+            this.imagetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imagetxt.Name = "imagetxt";
-            this.imagetxt.Size = new System.Drawing.Size(200, 26);
+            this.imagetxt.Size = new System.Drawing.Size(178, 29);
             this.imagetxt.TabIndex = 32;
             this.imagetxt.TextChanged += new System.EventHandler(this.imagetxt_TextChanged);
             // 
@@ -364,31 +394,33 @@
             // 
             this.username.AutoSize = true;
             this.username.BackColor = System.Drawing.Color.Transparent;
-            this.username.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.username.Location = new System.Drawing.Point(219, 539);
+            this.username.Location = new System.Drawing.Point(233, 463);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(167, 24);
+            this.username.Size = new System.Drawing.Size(122, 26);
             this.username.TabIndex = 34;
             this.username.Text = "Username";
             // 
             // usernametxt
             // 
-            this.usernametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernametxt.Location = new System.Drawing.Point(405, 537);
+            this.usernametxt.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernametxt.Location = new System.Drawing.Point(360, 463);
+            this.usernametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usernametxt.Name = "usernametxt";
-            this.usernametxt.Size = new System.Drawing.Size(424, 30);
+            this.usernametxt.Size = new System.Drawing.Size(377, 29);
             this.usernametxt.TabIndex = 7;
+            this.usernametxt.TextChanged += new System.EventHandler(this.usernametxt_TextChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Monument Extended Black", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.97015F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(652, 491);
+            this.label12.Location = new System.Drawing.Point(581, 388);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 24);
+            this.label12.Size = new System.Drawing.Size(48, 30);
             this.label12.TabIndex = 35;
             this.label12.Text = "TK";
             // 
@@ -397,9 +429,9 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Monument Extended Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(841, 461);
+            this.label13.Location = new System.Drawing.Point(748, 369);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 19);
+            this.label13.Size = new System.Drawing.Size(0, 18);
             this.label13.TabIndex = 36;
             // 
             // label14
@@ -407,19 +439,20 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Monument Extended Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(836, 590);
+            this.label14.Location = new System.Drawing.Point(743, 472);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 19);
+            this.label14.Size = new System.Drawing.Size(0, 18);
             this.label14.TabIndex = 37;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Monument Extended", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBox1.Location = new System.Drawing.Point(407, 315);
+            this.checkBox1.Location = new System.Drawing.Point(362, 252);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(391, 23);
+            this.checkBox1.Size = new System.Drawing.Size(293, 26);
             this.checkBox1.TabIndex = 38;
             this.checkBox1.Text = "Same as parmanent address";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -429,9 +462,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(835, 505);
+            this.pictureBox2.Location = new System.Drawing.Point(742, 404);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(367, 293);
+            this.pictureBox2.Size = new System.Drawing.Size(326, 234);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 39;
             this.pictureBox2.TabStop = false;
@@ -439,59 +473,62 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(33, 771);
+            this.label16.Location = new System.Drawing.Point(30, 633);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 25);
+            this.label16.Size = new System.Drawing.Size(69, 22);
             this.label16.TabIndex = 43;
             this.label16.Text = "DATE:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(116, 771);
+            this.label15.Location = new System.Drawing.Point(104, 633);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(57, 25);
+            this.label15.Size = new System.Drawing.Size(53, 22);
             this.label15.TabIndex = 42;
             this.label15.Text = "Date";
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Monument Extended Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(647, 354);
+            this.checkBox4.Location = new System.Drawing.Point(575, 283);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(129, 23);
+            this.checkBox4.Size = new System.Drawing.Size(94, 26);
             this.checkBox4.TabIndex = 47;
-            this.checkBox4.Text = "OTHERS";
+            this.checkBox4.Text = "Others";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Monument Extended Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(512, 355);
+            this.checkBox3.Location = new System.Drawing.Point(455, 284);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(129, 23);
+            this.checkBox3.Size = new System.Drawing.Size(98, 26);
             this.checkBox3.TabIndex = 46;
-            this.checkBox3.Text = "FEMALE";
+            this.checkBox3.Text = "Female";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Monument Extended Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(405, 355);
+            this.checkBox2.Location = new System.Drawing.Point(360, 284);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(101, 23);
+            this.checkBox2.Size = new System.Drawing.Size(75, 26);
             this.checkBox2.TabIndex = 45;
-            this.checkBox2.Text = "MALE";
+            this.checkBox2.Text = "Male";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // guna2DragControl1
@@ -512,21 +549,122 @@
             this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(14, 23);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(12, 18);
+            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(44, 40);
+            this.guna2CircleButton1.Size = new System.Drawing.Size(39, 32);
             this.guna2CircleButton1.TabIndex = 48;
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(282, 426);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(71, 26);
+            this.label17.TabIndex = 50;
+            this.label17.Text = "Email";
+            // 
+            // email_box
+            // 
+            this.email_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_box.Location = new System.Drawing.Point(359, 426);
+            this.email_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.email_box.Name = "email_box";
+            this.email_box.Size = new System.Drawing.Size(377, 29);
+            this.email_box.TabIndex = 49;
+            this.email_box.TextChanged += new System.EventHandler(this.email_box_TextChanged);
+            // 
+            // pp1
+            // 
+            this.pp1.BorderRadius = 20;
+            this.pp1.Controls.Add(this.l1);
+            this.pp1.Controls.Add(this.label19);
+            this.pp1.Controls.Add(this.label18);
+            this.pp1.Controls.Add(this.button1);
+            this.pp1.Controls.Add(this.textBox1);
+            this.pp1.FillColor = System.Drawing.Color.Red;
+            this.pp1.FillColor2 = System.Drawing.Color.Black;
+            this.pp1.FillColor3 = System.Drawing.Color.OrangeRed;
+            this.pp1.FillColor4 = System.Drawing.Color.Brown;
+            this.pp1.Location = new System.Drawing.Point(265, 196);
+            this.pp1.Name = "pp1";
+            this.pp1.Size = new System.Drawing.Size(483, 275);
+            this.pp1.TabIndex = 51;
+            // 
+            // l1
+            // 
+            this.l1.AutoSize = true;
+            this.l1.BackColor = System.Drawing.Color.Transparent;
+            this.l1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.l1.Location = new System.Drawing.Point(74, 226);
+            this.l1.Name = "l1";
+            this.l1.Size = new System.Drawing.Size(49, 22);
+            this.l1.TabIndex = 15;
+            this.l1.Text = "sent";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Monument Extended Black", 24.1791F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(19, 24);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(156, 54);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "OTP";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Calibri", 13.97015F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Transparent;
+            this.label18.Location = new System.Drawing.Point(72, 113);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(125, 33);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Enter OTP";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(209, 153);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 47);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Verify";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.20895F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(209, 116);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 29);
+            this.textBox1.TabIndex = 4;
+            // 
             // Reg_Card
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1202, 817);
+            this.ClientSize = new System.Drawing.Size(1068, 689);
+            this.Controls.Add(this.pp1);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.email_box);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
@@ -567,6 +705,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Reg_Card";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -574,6 +713,8 @@
             this.Load += new System.EventHandler(this.Reg_Bank_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pp1.ResumeLayout(false);
+            this.pp1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -620,5 +761,13 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox email_box;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel pp1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label l1;
     }
 }

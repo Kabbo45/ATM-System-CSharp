@@ -177,5 +177,21 @@ namespace ATM_System
             this.PP.Controls.Add(frm);
             frm.Show();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            PP.Controls.Clear();
+            wallet_history frm = new wallet_history() { TopLevel = false, TopMost = true };
+            this.PP.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            PP.Controls.Clear();
+            crypto_send_history frm = new crypto_send_history() { TopLevel = false, TopMost = true };
+            this.PP.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }

@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ATM_System.exe.manifest" size="14420">
+    <dependentAssembly dependencyType="install" codebase="ATM_System.exe.manifest" size="19778">
       <assemblyIdentity name="ATM_System.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2ntXLWbH8fBIIuZUUze8gCZDShoyXJHpF1tVFZN9unU=</dsig:DigestValue>
+        <dsig:DigestValue>dwFbc2U1uOfzIHHbSAElIVWK2hYxbSFzVcEhYrFXUHc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

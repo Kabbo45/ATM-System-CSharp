@@ -56,6 +56,11 @@ namespace ATM_System.Main_Page
             con.Close();
         }
 
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if(checkBox1.Checked)

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +41,43 @@ namespace ATM_System.Main_Page
 
         public void xx()
         {
+            string x1 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + cc + ".jpg";
+            string x2 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + cc + ".jpeg";
+            string x3 = @"D:\Varsity\Projects\ATM System C#\User Image (Bank)\" + cc + ".png";
+            string x4 = @"D:\Varsity\Projects\ATM System C#\User Image (Card)\" + cc + ".jpg";
+            string x5 = @"D:\Varsity\Projects\ATM System C#\User Image (Card)\" + cc + ".jpeg";
+            string x6 = @"D:\Varsity\Projects\ATM System C#\User Image (Card)\" + cc + ".png";
+            FileInfo fileInfo1 = new FileInfo(x1);
+            FileInfo fileInfo2 = new FileInfo(x2);
+            FileInfo fileInfo3 = new FileInfo(x3);
+            FileInfo fileInfo4 = new FileInfo(x4);
+            FileInfo fileInfo5 = new FileInfo(x5);
+            FileInfo fileInfo6 = new FileInfo(x6);
+
+            if (fileInfo1.Exists)
+            {
+                pictureBox2.Image = new Bitmap(x1);
+            }
+            else if (fileInfo2.Exists)
+            {
+                pictureBox2.Image = new Bitmap(x2);
+            }
+            else if (fileInfo3.Exists)
+            {
+                pictureBox2.Image = new Bitmap(x3);
+            }
+            else if (fileInfo4.Exists)
+            {
+                pictureBox2.Image = new Bitmap(x4);
+            }
+            else if (fileInfo5.Exists)
+            {
+                pictureBox2.Image = new Bitmap(x5);
+            }
+            else if (fileInfo6.Exists)
+            {
+                pictureBox2.Image = new Bitmap(x6);
+            }
             getdata();
             loaddata();
         }
@@ -66,12 +104,12 @@ namespace ATM_System.Main_Page
                 user = rdr.GetString("username");
                 pin = rdr.GetInt32("pin");
                 ac_no = rdr.GetString("ac_no");
-                label20.Text = "AC No";
+                label1.Text = "AC No";
             }
 
             else if (cc2 == 2)
             {
-                label20.Show();
+                label1.Show();
                 MySqlCommand cmd3 = con.CreateCommand();
                 cmd3.CommandType = CommandType.Text;
                 cmd3.CommandText = "SELECT * from reg_card where username='" + cc + "'";
@@ -89,7 +127,7 @@ namespace ATM_System.Main_Page
                 user = rdr.GetString("username");
                 pin = rdr.GetInt32("pin");
                 ac_no = rdr.GetString("card_no");
-                label20.Text = "Card No";
+                label1.Text = "Card No";
             }
             con.Close();
         }
@@ -144,6 +182,11 @@ namespace ATM_System.Main_Page
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }

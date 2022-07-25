@@ -95,16 +95,19 @@ namespace ATM_System
 
         private void card_show_Load(object sender, EventArgs e)
         {
-            label1.Text = Reg_Card.SetValueForText1;
             label2.Text = Reg_Card.SetValueForText2;
-            label3.Text = Reg_Card.SetValueForText3;
-            label4.Text = Reg_Card.SetValueForText4;
-            label5.Text = Reg_Card.SetValueForText5;
-
-            label12.Text = Reg_Card.SetValueForText1;
             label11.Text = Reg_Card.SetValueForText2;
+
+            label3.Text = Reg_Card.SetValueForText3;
             label10.Text = Reg_Card.SetValueForText3;
+
+            label1.Text = Reg_Card.SetValueForText1;
+            label12.Text = Reg_Card.SetValueForText1;
+
+            label4.Text = Reg_Card.SetValueForText4;
             label9.Text = Reg_Card.SetValueForText4;
+
+            label5.Text = Reg_Card.SetValueForText5;
             label8.Text = Reg_Card.SetValueForText5;
         }
         string cv = Reg_Card.SetValueForText6;
