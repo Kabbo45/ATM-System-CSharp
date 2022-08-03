@@ -6,12 +6,9 @@
 
 ![BTC Price](https://badgen.net/https/napkin-examples.npkn.net/bitcoin-badge)
 
-
-
-# Table of contents
-- [Download](#download)
-- [Contributing](#contributing)
-- [License](#license)
+# Made With
+![forthebadge](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
+![forthebadge](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 
 # Download
 [Download Now](https://github.com/Kabbo45/ATM-System-CSharp/archive/refs/heads/main.zip).
