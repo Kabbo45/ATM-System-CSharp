@@ -12,7 +12,7 @@
 ![forthebadge](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 # Download
-[Download Now](https://github.com/Kabbo45/ATM-System-CSharp/archive/refs/heads/main.zip).
+[Download Now](https://github.com/Kabbo45/ATM-System-CSharp/archive/refs/heads/main.zip)
 
 # Contributing
 Your contributions are always welcome!
