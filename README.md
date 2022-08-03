@@ -6,7 +6,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/colorls.svg)](https://badge.fury.io/rb/colorls)
 [![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)
-[![BTC Price](https://badgen.net/https/napkin-examples.npkn.net/bitcoin-badge)]
+[![BTC Price](https://badgen.net/https/napkin-examples.npkn.net/bitcoin-badge)
 
 
 
