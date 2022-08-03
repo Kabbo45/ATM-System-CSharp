@@ -6,7 +6,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/colorls.svg)](https://badge.fury.io/rb/colorls)
 [![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)
-[![BTC Price](https://badgen.net/https/napkin-examples.npkn.net/bitcoin-badge)
+![BTC Price](https://badgen.net/https/napkin-examples.npkn.net/bitcoin-badge)
+![BTC Price](https://badgen.net/https/napkin-examples.npkn.net/bitcoin-badge)
 
 
 
@@ -23,3 +24,6 @@ Your contributions are always welcome!
 
 # License
 BUBT - [Tunazzinur Rahman Kabbo](https://github.com/Kabbo45/).
+
+# Contact
+[![forthebadge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/u/0/#inbox/FMfcgzGqPpXKscMDBnkdwDlfcFKJJZtB?compose=CllgCJqXxhGKLcKvWnmtctHlNZjXBkqzXvxcbCvdcwLxtMRHDgkFzMcGvSRSnMLSqhLmgWpdcjq)
